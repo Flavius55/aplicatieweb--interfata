@@ -1,0 +1,109 @@
+.formular{
+    width: 30vw;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: 35vw;
+}
+.titlu,.titlu2{
+    color:rgb(255, 123, 0);
+    font-size: 45px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputs{
+    width: 20vw;
+    height: 5vh;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    border: rgb(212, 0, 255) solid 0.5vh;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.inputs::placeholder{
+    color:  rgb(212, 0, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+.spatiu{
+    width: 30vw;
+    height: 15vh;
+    background-color: white;
+}
+.spatiuMic{
+    width: 30vw;
+    height: 10vh;
+    background-color: white;
+}
+.butoane,.butoane2{
+    width: 30vw;
+    height: 10vh;
+    color:  rgb(255, 123, 0);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    border:none;
+    /* border-bottom: rgb(255, 123, 0) solid 1vh; */
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.butoane2{color:green}
+.butoane:hover{
+    background-color: rgb(255, 123, 0);
+    color: white;
+    border-radius: 15px;
+}
+.butoane2:hover{
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+}
+#send:hover{
+    cursor:pointer;
+}
+#eroare{
+    display: none;
+    color:  red;
+}
+#eroare:hover{
+    background-color: white;
+}
+
+
+@media screen and (max-width:900px){
+    .formular{
+        width: 80vw;
+        height: 80vh;
+        margin-top: 10vh;
+        margin-left: 10vw;
+    }
+    .inputs{
+        width: 50vw;
+        height: 5vh;
+        margin-top: 5vh;
+        margin-left: 12.5vw;
+    }
+    .titlu{
+        margin-left: 25vw;
+    }
+    .titlu2{
+        margin-left: 25vw;
+    }
+    .butoane,.butoane2{
+        width: 70vw;
+        height: 10vh;
+        margin-left: 2.5vw;
+    }
+    #eroare{
+        height: 15vh;
+    }
+}

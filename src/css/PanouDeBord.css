@@ -1,0 +1,226 @@
+.panou{
+    /* background-color: rgb(236, 206, 206); */
+    width: 60vw;
+    height: 98vh;
+    margin-left: 20vw;
+    margin-top: 0px;
+    position: absolute;
+    top: 0px;
+}
+.topper{
+    background-color: rgb(255, 123, 0);
+    height: 5vh;
+    width: 60vw;
+    position: fixed;
+}
+.date{
+    background-color:  rgb(235, 200, 168);
+    width: 60vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+     position: fixed; 
+}
+.nume,.numar{
+    width: 15vw;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: rgb(255, 123, 0);
+}
+.numar{
+    margin-right: 0px;
+}
+#activitati-zilnice{
+    width: 45vw;
+    margin-left: 10vw;
+    /* overflow: scroll;  -ms-overflow-style: none;
+    scrollbar-width: none; */
+}
+.spatiuu{
+    width: 45vw;
+    height: 20vh;
+}
+.spatiu2{
+    width: 45vw;
+    height: 10vh;
+}
+#activitati-zilnice::-webkit-scrollbar{
+    display: none;
+}
+.act{
+    width: 45vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.check{
+    width: 4vh;
+    height: 4vh;
+    margin-right: 5vh;
+    border:rgb(255, 123, 0) solid 6px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.text{
+    height: 7vh;
+    width: 35vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 123, 0);
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+.buton-meniu{
+    width: 10vw;
+    height: 7.5vh;
+    background-color: rgb(255, 123, 0);
+    color: white;
+    position: absolute;
+    top:20vh;
+    text-align: center;
+    line-height: 7.5vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    position: fixed;
+    cursor: pointer;
+}
+#bm-simplu{
+    top:27.5vh;
+    background-color: white;
+    color: rgb(255, 123, 0);
+}
+#bm-important{
+    top:35vh;
+    background-color: white;
+    color: rgb(255, 123, 0);
+}
+.adauga{
+    width: 60vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2px;
+    background-color: white;
+}
+input,input::placeholder{
+    outline:none;
+    -webkit-appearance: none;
+    color:rgb(255, 123, 0);
+    text-align: center;
+}
+#buton-adauga{
+    width: 10vw;
+    height: 9vh;
+    background-color: white;
+    border: solid rgb(255, 123, 0) 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 123, 0);
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+#buton-adauga:hover{
+    background-color: rgb(255, 123, 0);
+    color: white;
+}
+#text-adauga,#camp-obligatoriu{
+    width: 30vw;
+    height: 9vh;
+    background-color: white;
+    border: solid rgb(255, 123, 0) 5px;
+    border-radius: 10px;
+    margin-right: 2vw;
+    color: rgb(255, 123, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+#camp-obligatoriu{
+    position: absolute;
+    width: 27vw;
+    height: 8vh;
+    bottom:2px;
+    left:10vw;
+    border:none;
+    color: red;
+    display: none;
+}
+
+@media screen and (max-width:900px){
+    .panou{
+        width: 100vw;
+        margin-left: 0vw;
+        left:0px;
+    }
+    .topper{
+        width: 100vw;
+    }
+    .date{
+        width: 100vw;
+    }
+    .nume,.numar{
+        width: 25vw;
+        margin-right: 30vw;
+    }
+    .numar{
+        margin-right: 0px;
+    }
+    .buton-meniu{
+        width: 33vw;
+        height: 8vh;
+    }
+    #bm-simplu{
+        left:33vw;
+        top:20vh;
+    }
+    #bm-important{
+        left:67vw;
+        top:20vh;
+    }
+    .date{
+        margin-bottom: 7.5vh;
+    }
+    .act{
+        width: 90vw;
+    }
+    .text{
+        width: 80vw;
+    }
+    .adauga{
+        width: 100vw;
+    }
+    #text-adauga,#camp-obligatoriu{
+        width: 55vw;
+    }
+    #buton-adauga{
+        width: 20vw;
+    }
+    .spatiuu{
+        height: 27.5vh;
+    }
+}
+@media screen and (max-width:900px){
+    .text,#text-adauga,#buton-adauga,#camp-obligatoriu{
+        font-size: 15px;
+    }
+    .buton-meniu{
+        font-size: 18px;
+    }
+}
